@@ -19,7 +19,7 @@ CREATE TABLE Comments (
     movie_id int NOT NULL);
     
 CREATE TABLE Ratings (
-    id SERIAL PRIMARY KEY,
+    id int PRIMARY KEY NOT NULL,
     rating DECIMAL(3, 2),
     user_id int NOT NULL,
     movie_id int NOT NULL);
